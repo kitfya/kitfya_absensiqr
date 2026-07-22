@@ -1,0 +1,122 @@
+import defaultTheme from "tailwindcss/defaultTheme";
+import forms from "@tailwindcss/forms";
+
+/** @type {import('tailwindcss').Config} */
+export default {
+    content: [
+        "./vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php",
+        "./storage/framework/views/*.php",
+        "./resources/views/**/*.blade.php",
+    ],
+
+    theme: {
+        extend: {
+            colors: {
+                error: "#ba1a1a",
+                tertiary: "#003564",
+                secondary: "#516070",
+                "on-tertiary-fixed-variant": "#004883",
+                "inverse-surface": "#213145",
+                "on-secondary-fixed": "#0e1d2b",
+                "tertiary-fixed": "#d4e3ff",
+                "on-error": "#ffffff",
+                "surface-container-lowest": "#ffffff",
+                "tertiary-container": "#004c8b",
+                "on-secondary-container": "#576676",
+                "primary-fixed": "#dde1ff",
+                "surface-container": "#e5eeff",
+                "primary-fixed-dim": "#b8c4ff",
+                "surface-dim": "#cbdbf5",
+                "on-primary-container": "#a8b8ff",
+                "error-container": "#ffdad6",
+                background: "#f8f9ff",
+                "inverse-on-surface": "#eaf1ff",
+                "on-secondary": "#ffffff",
+                "on-primary-fixed-variant": "#173bab",
+                "on-primary-fixed": "#001453",
+                "on-tertiary-fixed": "#001c39",
+                "secondary-fixed-dim": "#b9c8db",
+                "tertiary-fixed-dim": "#a4c9ff",
+                "on-background": "#0b1c30",
+                "on-surface-variant": "#444653",
+                "on-error-container": "#93000a",
+                "on-primary": "#ffffff",
+                "surface-tint": "#3755c3",
+                "surface-container-high": "#dce9ff",
+                "surface-bright": "#f8f9ff",
+                "surface-variant": "#d3e4fe",
+                "secondary-container": "#d5e4f8",
+                "on-tertiary": "#ffffff",
+                "surface-container-highest": "#d3e4fe",
+                outline: "#757684",
+                surface: "#f8f9ff",
+                "on-secondary-fixed-variant": "#3a4858",
+                "on-surface": "#0b1c30",
+                "primary-container": "#1e40af",
+                "surface-container-low": "#eff4ff",
+                "on-tertiary-container": "#8fbeff",
+                primary: "#00288e",
+                "outline-variant": "#c4c5d5",
+                "inverse-primary": "#b8c4ff",
+                "secondary-fixed": "#d5e4f8",
+            },
+            borderRadius: {
+                DEFAULT: "0.25rem",
+                lg: "0.5rem",
+                xl: "0.75rem",
+                full: "9999px",
+            },
+            spacing: {
+                "card-gap": "24px",
+                base: "8px",
+                gutter: "24px",
+                "section-margin": "48px",
+                "container-padding": "32px",
+            },
+            fontFamily: {
+                "headline-xl": ["Inter"],
+                "data-table": ["Inter"],
+                "body-md": ["Inter"],
+                "headline-lg": ["Inter"],
+                "title-md": ["Inter"],
+                "label-caps": ["Inter"],
+                "body-lg": ["Inter"],
+            },
+            fontSize: {
+                "headline-xl": [
+                    "32px",
+                    {
+                        lineHeight: "40px",
+                        letterSpacing: "-0.02em",
+                        fontWeight: "700",
+                    },
+                ],
+                "data-table": [
+                    "14px",
+                    { lineHeight: "20px", fontWeight: "500" },
+                ],
+                "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }],
+                "headline-lg": [
+                    "24px",
+                    {
+                        lineHeight: "32px",
+                        letterSpacing: "-0.01em",
+                        fontWeight: "600",
+                    },
+                ],
+                "title-md": ["18px", { lineHeight: "24px", fontWeight: "600" }],
+                "label-caps": [
+                    "12px",
+                    {
+                        lineHeight: "16px",
+                        letterSpacing: "0.05em",
+                        fontWeight: "700",
+                    },
+                ],
+                "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+            },
+        },
+    },
+
+    plugins: [forms],
+};
